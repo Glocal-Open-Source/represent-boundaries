@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'boundaries',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +83,6 @@ DATABASES = {
         'PASSWORD': 'postgres',
         'HOST': 'db',     # <--- this is the service name in docker-compose.yml
         'PORT': '5432',
-        'django.contrib.gis',
-        'boundaries',
     }
 }
 
