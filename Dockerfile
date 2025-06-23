@@ -1,6 +1,7 @@
 FROM ghcr.io/osgeo/gdal:alpine-normal-3.8.2
 
 RUN apk add --no-cache \
+    tzdata \
     python3 \
     py3-pip \
     python3-dev \
