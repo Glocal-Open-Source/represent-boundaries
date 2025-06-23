@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'boundaries',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',     # <--- this is the service name in docker-compose.yml
+        'PASSWORD': '$XCWsbx<RRwFk7o1nwvhYuRvwL>J',
+        'HOST': 'db-boundary.c10mceoaan8r.ca-central-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
